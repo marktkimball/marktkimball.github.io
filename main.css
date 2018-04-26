@@ -23,6 +23,7 @@ a {
 
 header {
   height: calc(3 * 18rem);
+  overflow: hidden;
   position: relative;
   width: 100vw;
 }
