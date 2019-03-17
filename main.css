@@ -140,6 +140,7 @@ section hr {
 
 .projects {
   background: #eceff1;
+  flex-direction: column;
 }
 
 .card {
@@ -147,6 +148,7 @@ section hr {
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
+  margin-bottom: 32px;
   padding: 1.6rem;
 }
 
