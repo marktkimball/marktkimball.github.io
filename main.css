@@ -81,17 +81,7 @@ header {
 
 section {
   border-bottom: 0.1rem solid #b0bec5;
-  display: flex;
-  justify-content: space-between;
   padding: 6.4rem 10%;
-}
-
-section > div:nth-child(1) {
-  flex: 1;
-}
-
-section > div:nth-child(2) {
-  flex: 2;
 }
 
 section hr {
@@ -107,7 +97,7 @@ section hr {
 .icon-link {
   color: #03a9f4;
   margin-right: 3.2rem;
-  transition: all 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 .icon-link:hover {
@@ -126,7 +116,7 @@ section hr {
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
   color: #fff;
   padding: 1.6rem;
-  transition: all 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
 }
 
 .button:hover {
@@ -140,7 +130,6 @@ section hr {
 
 .projects {
   background: #eceff1;
-  flex-direction: column;
 }
 
 .card {
@@ -155,4 +144,26 @@ section hr {
 .extras {
   align-items: center;
   display: flex;
+}
+
+@media screen and (max-width: 414px) {
+  .title {
+    margin-left: 1.6rem;
+  }
+
+  .title h1 {
+    font-size: 4.8rem;
+  }
+
+  .about {
+    padding: 0 1.6rem 3.2rem 1.6rem;
+  }
+
+  .projects {
+    padding: 1.6rem 0;
+  }
+
+  .projects-section-title {
+    margin: 0 1.6rem;
+  }
 }
