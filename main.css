@@ -23,9 +23,20 @@ a {
 }
 
 header {
-  height: calc(3 * 18rem);
+  height: calc(3 * 21rem);
+  overflow: hidden;
   position: relative;
   width: 100vw;
+}
+
+.header-logo {
+  filter: invert(1);
+  position: absolute;
+  right: 4rem;
+  top: 2.4rem;
+  width: 3.2rem;
+  z-index: 1;
+  animation: fadein 2000ms;
 }
 
 .stripe-container {
@@ -40,7 +51,8 @@ header {
   left: 0;
   right: 0;
   transform: rotate(-8deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19),
+    0 0.6rem 0.6rem rgba(0, 0, 0, 0.23);
 }
 
 .stripe:nth-of-type(1) {
@@ -64,6 +76,7 @@ header {
   justify-content: center;
   margin: 0 10%;
   position: relative;
+  animation: fadein 2000ms, slideIn 1000ms forwards;
 }
 
 .title > h1 {
@@ -73,7 +86,7 @@ header {
 .title > hr {
   border-color: #fff;
   width: 100%;
-  max-width: 500px;
+  max-width: 50rem;
   margin-left: 0;
 }
 
@@ -103,7 +116,7 @@ section hr {
   font-style: italic;
   position: relative;
   overflow: hidden;
-  padding-right: 2px;
+  padding-right: 0.2rem;
   margin-right: 3.2rem;
 }
 
@@ -112,23 +125,27 @@ section hr {
   background-color: #ff7043;
   opacity: 0;
   position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: -25px;
+  top: 0.8rem;
+  bottom: 0.8rem;
+  left: -2.4rem;
   transition: all 200ms ease-in-out;
   width: 100%;
-  height: 5px;
+  height: 0.5rem;
+}
+
+.code-link::before {
+  background-color: #039be5;
 }
 
 .view-link:hover::before {
-  left: 5px;
+  left: 0.5rem;
   opacity: 0.5;
 }
 
 .view-link::after {
   content: '';
   background-color: #424242;
-  height: 2px;
+  height: 0.2rem;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -170,7 +187,7 @@ section hr {
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
     0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
   padding: 1.6rem;
 }
 
@@ -190,8 +207,8 @@ footer {
   font-style: italic;
 }
 
-.contact-divider {
-  display: block;
+.footer-wordmark {
+  width: 4rem;
 }
 
 .contact-link {
@@ -235,15 +252,29 @@ footer {
   }
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
   }
 
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   .want-to-work-title {
-    border-bottom: 1px solid black;
-    margin-bottom: 3.2rem;
-    padding-bottom: 3.2rem;
+    border-bottom: 0.1rem solid #000;
+    margin: 3.2rem 0 3.2rem 0;
+    padding: 3.2rem 0;
+    text-align: center;
+    width: 60%;
   }
 
   .contact-link {
@@ -252,5 +283,23 @@ footer {
 
   .contact-divider {
     display: none;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(2.4rem);
+  }
+  to {
+    transform: translateY(0);
   }
 }
