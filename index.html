@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Ubuntu"
       rel="stylesheet"
@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <img class="header-logo" src="./wordmark.png" alt="wordmark logo" />
+    <img class="header-logo" src="./assets/wordmark.png" alt="wordmark logo" />
     <header>
       <div class="stripe-container">
         <div class="stripe"></div>
@@ -50,22 +50,59 @@
     </section>
     <section class="projects">
       <div class="projects-section-title">
-        <h2>Projects</h2>
+        <h2>My Work</h2>
         <hr />
       </div>
-      <div>
-        <div class="card">
-          <h2>Soccer Standings</h2>
-          <p>
-            A Create React App project that makes use of React Router, Firebase,
-            and cron jobs to scrape and display the latest tables for the top 5
-            soccer leagues in the world. Created as a passion project to analyze
-            team data across matchdays, this has been an ongoing project with
-            incremental improvements. Initially I set up an "admin" dashboard to
-            manually input all the soccer score, but I quickly grew weary of
-            this process and set up a scraping service that runs every 15
-            minutes on a cron job.
-          </p>
+      <div class="project">
+          <h1 class="project-title">Soccer Standings</h1>
+          <div class="project-intro">
+            <p class="project-description">
+              A Create React App project that makes use of React Router,
+              Firebase, and cron jobs to scrape and display the latest tables
+              for the top 5 soccer leagues in the world. Created as a passion
+              project to analyze team data across matchdays, this has been an
+              ongoing project with incremental improvements. Initially I set up
+              an "admin" dashboard to manually input all the soccer score, but I
+              quickly grew weary of this process and set up a scraping service
+              that runs every 15 minutes on a cron job.
+            </p>
+            <div class="project-image card-image-frame">
+              <img
+                class="app-image"
+                src="./assets/soccer-standings-1.png"
+                alt="soccer standings overview"
+              />
+            </div>
+          </div>
+            <div class="feature-grouping mobile-reverse">
+              <div class="card-image-frame">
+                <img
+                  class="app-image overflowed-right"
+                  src="./assets/soccer-standings-2.png"
+                  alt="soccer standings overview"
+                />
+              </div>
+              <div class="callout-feature"><h1 class="callout-inner">Detailed analysis.</h1></div>
+            </div>
+            <div class="feature-grouping">
+            <div class="card-image-frame full-width">
+              <img
+                class="app-image"
+                src="./assets/soccer-standings-3.png"
+                alt="soccer standings overview"
+              />
+            </div>
+          </div>
+            <div class="feature-grouping">
+              <div class="callout-feature"><h1 class="callout-inner">Built for mobile.</h1></div>
+            <div class="card-image-frame limited-height">
+              <img
+                class="app-image iphone-image"
+                src="./assets/soccer-standings-4.png"
+                alt="soccer standings overview"
+              />
+            </div>
+          </div>
           <div class="extras">
             <a
               class="view-link"
@@ -86,7 +123,6 @@
           </div>
         </div>
       </div>
-      <div>
         <div class="card">
           <h2>ISS Tracer</h2>
           <p>
@@ -152,11 +188,11 @@
     <footer>
       <img
         class="footer-wordmark mobile"
-        src="./wordmark.png"
+        src="./assets/wordmark.png"
         alt="wordmark logo"
       />
       <p class="want-to-work-title">Want to work with me?</p>
-      <img class="footer-wordmark desktop" src="wordmark.png" />
+      <img class="footer-wordmark desktop" src="./assets/wordmark.png" />
       <div>
         <a class="contact-link" href="mailto:mkengineeringdev@gmail.com">
           mkengineeringdev@gmail.com
@@ -169,7 +205,9 @@
         >
           github.com/marktkimball
         </a>
-        <a class="contact-link" download href="./resume.pdf">Download resume</a>
+        <a class="contact-link" download href="./assets/resume.pdf"
+          >Download resume</a
+        >
       </div>
     </footer>
   </body>
