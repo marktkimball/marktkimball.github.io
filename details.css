@@ -1,0 +1,154 @@
+.header-logo-container {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header-logo-details {
+  animation: fadein 2000ms;
+  display: block;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 5.6rem;
+}
+
+.project {
+  margin-bottom: 8.4rem;
+}
+
+.project-intro {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 6.4rem;
+}
+
+.project-description {
+  flex: 2;
+  margin: 0 6.4rem 0 0;
+  text-align: justify;
+}
+
+.project-title {
+  font-size: 10rem;
+  line-height: 10rem;
+  margin: 1.6rem 0 4.8rem 0;
+}
+
+.project-image {
+  flex: 3;
+}
+
+.callout-feature {
+  flex: 1;
+}
+
+.callout-inner {
+  max-width: 38rem;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  margin: 0;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.feature-grouping {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12.1rem;
+}
+
+.feature-grouping > *:nth-child(2) {
+  margin-left: 6.4rem;
+}
+
+.card-image-frame {
+  background-color: #c9eefb;
+  display: inline-block;
+  padding: 4.8rem;
+  overflow: hidden;
+  flex: 3;
+  max-width: 50%;
+}
+
+.card-image-frame.limited-height {
+  max-height: 34rem;
+}
+
+.app-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 45rem;
+  width: 100%;
+}
+
+.card-image-frame.full-width {
+  max-width: 100%;
+}
+
+.overflowed-right {
+  transform: translate(15.6rem, 0);
+}
+
+.iphone-image {
+  border-radius: 3.2rem;
+  max-height: 40rem;
+  transform: rotate(-21deg) translate(5.3rem, 2.5rem);
+  width: initial;
+}
+
+@media screen and (max-width: 768px) {
+  .project-title {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+
+  .project-description {
+    margin-right: 0;
+  }
+
+  .project-intro,
+  .feature-grouping {
+    flex-direction: column;
+  }
+
+  .feature-grouping {
+    margin-top: 6.4rem;
+  }
+
+  .feature-grouping.mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .project-intro > *,
+  .feature-grouping > * {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .feature-grouping > *:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .card-image-frame {
+    margin-top: 3.2rem;
+  }
+
+  .callout-inner {
+    font-size: 5.2rem;
+    line-height: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header-logo-details {
+    width: 4.8rem;
+  }
+
+  .project-title {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+}

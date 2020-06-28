@@ -14,12 +14,16 @@
   </head>
 
   <body>
-    <img class="header-logo" src="./assets/wordmark.png" alt="wordmark logo" />
+    <img
+      class="header-logo invert"
+      src="./assets/wordmark.png"
+      alt="wordmark logo"
+    />
     <header>
       <div class="stripe-container">
-        <div class="stripe"></div>
-        <div class="stripe"></div>
-        <div class="stripe"></div>
+        <div class="stripe elevation-3"></div>
+        <div class="stripe elevation-3"></div>
+        <div class="stripe elevation-3"></div>
       </div>
       <div class="title">
         <h1>Mark Kimball</h1>
@@ -53,135 +57,113 @@
         <h2>My Work</h2>
         <hr />
       </div>
-      <div class="project">
-          <h1 class="project-title">Soccer Standings</h1>
-          <div class="project-intro">
-            <p class="project-description">
-              A Create React App project that makes use of React Router,
-              Firebase, and cron jobs to scrape and display the latest tables
-              for the top 5 soccer leagues in the world. Created as a passion
-              project to analyze team data across matchdays, this has been an
-              ongoing project with incremental improvements. Initially I set up
-              an "admin" dashboard to manually input all the soccer score, but I
-              quickly grew weary of this process and set up a scraping service
-              that runs every 15 minutes on a cron job.
-            </p>
-            <div class="project-image card-image-frame">
-              <img
-                class="app-image"
-                src="./assets/soccer-standings-1.png"
-                alt="soccer standings overview"
-              />
-            </div>
-          </div>
-            <div class="feature-grouping mobile-reverse">
-              <div class="card-image-frame">
-                <img
-                  class="app-image overflowed-right"
-                  src="./assets/soccer-standings-2.png"
-                  alt="soccer standings overview"
-                />
-              </div>
-              <div class="callout-feature"><h1 class="callout-inner">Detailed analysis.</h1></div>
-            </div>
-            <div class="feature-grouping">
-            <div class="card-image-frame full-width">
-              <img
-                class="app-image"
-                src="./assets/soccer-standings-3.png"
-                alt="soccer standings overview"
-              />
-            </div>
-          </div>
-            <div class="feature-grouping">
-              <div class="callout-feature"><h1 class="callout-inner">Built for mobile.</h1></div>
-            <div class="card-image-frame limited-height">
-              <img
-                class="app-image iphone-image"
-                src="./assets/soccer-standings-4.png"
-                alt="soccer standings overview"
-              />
-            </div>
-          </div>
-          <div class="extras">
-            <a
-              class="view-link"
-              href="https://soccer-table-c68e5.firebaseapp.com/"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              View the app
-            </a>
-            <a
-              class="view-link code-link"
-              href="https://github.com/marktkimball/soccer-table"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              See the code
-            </a>
-          </div>
+      <div class="card elevation-1">
+        <img
+          class="card-media elevation-1"
+          src="./assets/soccer-standings-1.png"
+          alt="soccer standings overview"
+        />
+        <div class="card-title-container">
+          <h2>Soccer Standings</h2>
+          <a class="view-link project-link" href="./soccer-standings.html">
+            Project details
+          </a>
+        </div>
+        <p>
+          A Create React App project that makes use of React Router, Firebase,
+          and cron jobs to scrape and display the latest tables for the top 5
+          soccer leagues in the world. Created as a passion project to analyze
+          team data across matchdays, this has been an ongoing project with
+          incremental improvements. Initially I set up an "admin" dashboard to
+          manually input all the soccer score, but I quickly grew weary of this
+          process and set up a scraping service that runs every 15 minutes on a
+          cron job.
+        </p>
+        <div class="extras">
+          <a
+            class="view-link"
+            href="https://soccer-table-c68e5.firebaseapp.com/"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            View the app
+          </a>
+          <a
+            class="view-link code-link"
+            href="https://github.com/marktkimball/soccer-table"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            See the code
+          </a>
         </div>
       </div>
-        <div class="card">
-          <h2>ISS Tracer</h2>
-          <p>
-            My first React Native project, inspired by my daughter's interest in
-            the International Space Station. Weary of using poorly designed
-            websites on my phone to find the current position of the ISS, so I
-            took on tracking the ISS as my first React Native project. I made
-            use of the Mapbox SDK and the Open Notify API to plot the ISS and
-            live update its location. Released to the Google Play store.
-          </p>
-          <div class="extras">
-            <a
-              class="view-link"
-              href="https://play.google.com/store/apps/details?id=com.isstracer"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              Google Play
-            </a>
-            <a
-              class="view-link code-link"
-              href="https://github.com/marktkimball/iss-tracker"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              See the code
-            </a>
-          </div>
+      <div class="card elevation-1">
+        <img
+          class="card-media elevation-1"
+          src="./assets/iss-tracer.jpg"
+          alt="iss tracer overview"
+        />
+        <h2>ISS Tracer</h2>
+        <p>
+          My first React Native project, inspired by my daughter's interest in
+          the International Space Station. Weary of using poorly designed
+          websites on my phone to find the current position of the ISS, so I
+          took on tracking the ISS as my first React Native project. I made use
+          of the Mapbox SDK and the Open Notify API to plot the ISS and live
+          update its location. Released to the Google Play store.
+        </p>
+        <div class="extras">
+          <a
+            class="view-link"
+            href="https://play.google.com/store/apps/details?id=com.isstracer"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            Google Play
+          </a>
+          <a
+            class="view-link code-link"
+            href="https://github.com/marktkimball/iss-tracker"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            See the code
+          </a>
         </div>
       </div>
-      <div>
-        <div class="card">
-          <h2>The Road to 50 States</h2>
-          <p>
-            A React project I created as a gift to my dad when he was preparing
-            to run a marathon in his 50th state -- Montana. The website served
-            to both tell the story of my dad's journey to reaching his 50th
-            state and also gave his family and friends a place to say their
-            congratulations. I used Firestore as a quick and easy way to store
-            all the user provided content (comments, photos, and videos).
-          </p>
-          <div class="extras">
-            <a
-              class="view-link"
-              href="https://theroadto50states.herokuapp.com/"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              View the app
-            </a>
-            <a
-              class="view-link code-link"
-              href="https://github.com/marktkimball/50-state-marathons"
-              rel="noopener noreferer"
-              target="_blanket"
-            >
-              See the code
-            </a>
-          </div>
+      <div class="card elevation-1">
+        <img
+          class="card-media elevation-1"
+          src="./assets/the-road-to-50-states-2.png"
+          alt="soccer standings overview"
+        />
+        <h2>The Road to 50 States</h2>
+        <p>
+          A React project I created as a gift to my dad when he was preparing to
+          run a marathon in his 50th state -- Montana. The website served to
+          both tell the story of my dad's journey to reaching his 50th state and
+          also gave his family and friends a place to say their congratulations.
+          I used Firestore as a quick and easy way to store all the user
+          provided content (comments, photos, and videos).
+        </p>
+        <div class="extras">
+          <a
+            class="view-link"
+            href="https://theroadto50states.herokuapp.com/"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            View the app
+          </a>
+          <a
+            class="view-link code-link"
+            href="https://github.com/marktkimball/50-state-marathons"
+            rel="noopener noreferer"
+            target="_blanket"
+          >
+            See the code
+          </a>
         </div>
       </div>
     </section>
