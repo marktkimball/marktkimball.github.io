@@ -1,5 +1,5 @@
 .header-logo-container {
-  background-color: #fff;
+  background-color: #013b48;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -8,6 +8,8 @@
 .header-logo-details {
   animation: fadein 2000ms;
   display: block;
+  filter: invert(77%) sepia(57%) saturate(342%) hue-rotate(1deg) brightness(97%)
+    contrast(93%);
   margin: 0 auto;
   padding: 1.6rem;
   width: 5.6rem;

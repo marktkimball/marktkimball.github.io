@@ -11,7 +11,7 @@ html {
 body {
   background-color: #fff;
   color: #263238;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
   line-height: 2.4rem;
@@ -39,8 +39,9 @@ header {
   animation: fadein 2000ms;
 }
 
-.invert {
-  filter: invert(1);
+.colorize {
+  filter: invert(77%) sepia(57%) saturate(342%) hue-rotate(1deg) brightness(97%)
+    contrast(93%);
 }
 
 .stripe-container {
@@ -59,19 +60,19 @@ header {
 
 .stripe:nth-of-type(1) {
   height: 24rem;
-  background: #1976d2;
+  background: #0889b4;
 }
 
 .stripe:nth-of-type(2) {
-  background: #ff7043;
+  background: #04607f;
 }
 
 .stripe:nth-of-type(3) {
-  background: #00bcd4;
+  background: #013b48;
 }
 
 .title {
-  color: #fff;
+  color: #eccd6e;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -86,7 +87,7 @@ header {
 }
 
 .title > hr {
-  border-color: #fff;
+  border-color: #eccd6e;
   width: 100%;
   max-width: 50rem;
   margin-left: 0;
@@ -124,7 +125,7 @@ section hr {
 }
 
 .view-link::before {
-  content: '';
+  content: "";
   background-color: #ff7043;
   opacity: 0;
   position: absolute;
@@ -150,7 +151,7 @@ section hr {
 }
 
 .view-link::after {
-  content: '';
+  content: "";
   background-color: #424242;
   height: 0.2rem;
   width: 100%;
@@ -312,6 +313,7 @@ footer {
 
   .contact-link {
     text-align: center;
+    margin: 0 0 0.8rem 0;
   }
 
   .contact-divider {
