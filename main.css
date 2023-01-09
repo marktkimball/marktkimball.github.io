@@ -171,15 +171,23 @@ section hr {
   background: #f5f5f5;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.4rem;
+}
+
 .card {
   background: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   margin-bottom: 3.2rem;
   padding: 1.6rem;
 }
 
 .card-media {
+  display: block;
   height: auto;
+  margin: 0 auto;
   max-height: 360px;
   max-width: 100%;
   width: auto;
@@ -301,6 +309,10 @@ footer {
 
   .mobile {
     display: block;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
   .want-to-work-title {
