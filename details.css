@@ -1,5 +1,5 @@
 .header-logo-container {
-  background-color: #013b48;
+  background-color: #18181b;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -8,8 +8,8 @@
 .header-logo-details {
   animation: fadein 2000ms;
   display: block;
-  filter: invert(77%) sepia(57%) saturate(342%) hue-rotate(1deg) brightness(97%)
-    contrast(93%);
+  filter: invert(86%) sepia(9%) saturate(407%) hue-rotate(209deg)
+    brightness(105%) contrast(102%);
   margin: 0 auto;
   padding: 1.6rem;
   width: 5.6rem;
@@ -67,7 +67,7 @@
 }
 
 .card-image-frame {
-  background-color: #c9eefb;
+  background-color: #dcd0ff;
   display: inline-block;
   padding: 4.8rem;
   overflow: hidden;

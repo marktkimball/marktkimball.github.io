@@ -1,3 +1,8 @@
+:root {
+  --dark-grey: #18181b;
+  --purple-frost: #efeaff;
+}
+
 *,
 *:before,
 *:after {
@@ -9,8 +14,8 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #263238;
+  background-color: var(--dark-grey);
+  color: var(--purple-frost);
   font-family: "Ubuntu", sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
@@ -24,7 +29,7 @@ a {
 }
 
 header {
-  height: calc(3 * 21rem);
+  height: 48rem;
   overflow: hidden;
   position: relative;
   width: 100vw;
@@ -40,42 +45,30 @@ header {
 }
 
 .colorize {
-  filter: invert(77%) sepia(57%) saturate(342%) hue-rotate(1deg) brightness(97%)
-    contrast(93%);
+  filter: invert(86%) sepia(9%) saturate(407%) hue-rotate(209deg)
+    brightness(105%) contrast(102%);
 }
 
 .stripe-container {
-  top: -18rem;
+  top: -28rem;
   left: -5rem;
   position: absolute;
   width: 120vw;
 }
 
 .stripe {
-  height: 20rem;
+  height: 64rem;
   left: 0;
   right: 0;
   transform: rotate(-8deg);
-}
-
-.stripe:nth-of-type(1) {
-  height: 24rem;
-  background: #0889b4;
-}
-
-.stripe:nth-of-type(2) {
-  background: #04607f;
-}
-
-.stripe:nth-of-type(3) {
-  background: #013b48;
+  background: #27272a;
 }
 
 .title {
-  color: #eccd6e;
+  color: var(--purple-frost);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 90%;
   justify-content: center;
   margin: 0 10%;
   position: relative;
@@ -87,7 +80,7 @@ header {
 }
 
 .title > hr {
-  border-color: #eccd6e;
+  border-color: var(--purple-frost);
   width: 100%;
   max-width: 50rem;
   margin-left: 0;
@@ -105,23 +98,24 @@ header {
 }
 
 section {
-  border-bottom: 0.1rem solid #b0bec5;
+  border-bottom: 0.1rem solid var(--purple-frost);
   padding: 6.4rem 10%;
 }
 
 section hr {
+  border-color: var(--purple-frost);
   display: inline-block;
   width: 20rem;
 }
 
 .view-link {
-  color: #000;
+  color: var(--purple-frost);
   display: inline-block;
   font-style: italic;
   position: relative;
   overflow: hidden;
   padding-right: 0.2rem;
-  margin-right: 3.2rem;
+  margin: 0.8rem 3.2rem 0 0;
 }
 
 .view-link::before {
@@ -168,7 +162,7 @@ section hr {
 }
 
 .projects {
-  background: #f5f5f5;
+  background: #27272a;
 }
 
 .project-grid {
@@ -178,10 +172,19 @@ section hr {
 }
 
 .card {
-  background: #fff;
+  background: var(--dark-grey);
   border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 3.2rem;
   padding: 1.6rem;
+  transition: all ease-in-out 250ms;
+}
+
+.card:hover {
+  box-shadow: 0 1rem 2rem rgba(207, 190, 255, 0.19),
+    0 0.6rem 0.6rem rgba(207, 190, 255, 0.23);
 }
 
 .card-media {
@@ -205,6 +208,7 @@ section hr {
 .extras {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 4.8rem;
 }
 
@@ -213,7 +217,7 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 3.2rem;
-  background-color: #fff;
+  background-color: var(--dark-grey);
 }
 
 .want-to-work-title {
@@ -240,23 +244,23 @@ footer {
 }
 
 .elevation-1 {
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12),
-    0 0.1rem 0.2rem rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0.1rem 0.3rem rgba(207, 190, 255, 0.12),
+    0 0.1rem 0.2rem rgba(207, 190, 255, 0.24);
 }
 
 .elevation-2 {
-  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16),
-    0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0.3rem 0.6rem rgba(207, 190, 255, 0.16),
+    0 0.3rem 0.6rem rgba(207, 190, 255, 0.23);
 }
 
 .elevation-3 {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19),
-    0 0.6rem 0.6rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1rem 2rem rgba(207, 190, 255, 0.19),
+    0 0.6rem 0.6rem rgba(207, 190, 255, 0.23);
 }
 
 .elevation-5 {
-  box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3),
-    0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1.9rem 3.8rem rgba(207, 190, 255, 0.3),
+    0 1.5rem 1.2rem rgba(207, 190, 255, 0.22);
 }
 
 @media screen and (max-width: 414px) {
